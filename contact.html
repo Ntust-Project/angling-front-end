@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <link rel="Shortcut Icon" href="favicon.ico" />
+		<title>Welcome to Room 408</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="assets/js/gotop.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="Iori Moe"/></span>
+							<h1>Contact Us</h1>
+						</header>
+						<hr />
+						<form id="gform" method="POST" class="pure-form pure-form-stacked" action="https://script.google.com/macros/s/AKfycbzkM83xTq926mzrpsLszZTuRDLHMWrfFbnR8ez0ldjrllkFM914/exec">
+							<fieldset class="pure-group">
+								<label for="name">稱呼:</label>
+								<input id="name" name="稱呼" type="text" value="" required placeholder="稱呼"/>
+							</fieldset>
+							<br>
+							<fieldset class="pure-group">
+								<label for="email">信箱:</label>
+								<input id="email" name="信箱" type="email" value="" required placeholder="你的信箱@email.com"/>
+							</fieldset>
+							<br>
+							<fieldset class="pure-group">
+								<label for="message">建議: </label>
+								<textarea id="message" name="建議" rows="5" placeholder="你想說的話及建議..." style="resize:none;"></textarea>
+							</fieldset>
+							<br>
+							<button class="button-success pure-button button-xlarge">
+							<i class="fa fa-paper-plane"></i>&nbsp;送出</button>
+
+							</form>
+							<div style="display:none;" id="thankyou_message">
+								<h2><em>Thanks for contacting us!</em><br>
+								We will get back to you soon！</h2>
+							</div>
+						<hr />
+						
+						<!-- Footer -->
+						<footer id="footer">
+							<ul class="icons">
+								<li><a href="index.html" class="fa-home"></a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; 408 Room</li>
+						</ul>
+					</footer>
+
+			</div>
+		<!-- Button Gotop -->
+			<div id="gotop">
+				<ul class="icons">
+					<li><a class="fa fa-arrow-up"></i></a></li>
+				</ul>
+			</div>
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+			<script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js" charset="big5"></script>
+	</body>
+</html>

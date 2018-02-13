@@ -1,0 +1,1370 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Welcome to Room 408</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/tablesort.js"></script>
+<script src="assets/js/tablesearch.js"></script>
+<script src="assets/js/load.js"></script>
+<script src="assets/js/gotop.js"></script>
+</head>
+<body class="is-loading">
+<div id="wrapper">
+<section id="main" class="grade">
+<header>
+<span class="avatar"><img src="images/avatar.jpg" alt="Iori Moe" /></span>
+<h1>台科選課小釣手-看來是位缺學分的朋友呢</h1>
+<h3 align="right">最後更新時間: 2017/06/11 18:48:22</h3>
+</header>
+<div class="Content">
+<select name="selection" id="selectInput">
+  <option value="-1">搜尋全部</option>
+　<option value="0">課程代碼</option>
+　<option value="1">通識向度</option>
+　<option value="2">課程名稱</option>
+　<option value="3">學分</option>
+  <option value="4">授課老師</option>
+  <option value="5">上課時間</option>
+  <option value="6">教室</option>
+  <option value="7">選課人數</option>
+  <option value="8">限制人數</option>
+  <option value="9">選課率</option>
+</select>
+<input type="text" id="myInput" onkeyup="tablesearch()" placeholder="輸入你想查詢的字符!">
+<table id="myTable2">
+  <thead>
+    <tr>
+      <th onclick="sortTable(0)"></th>
+      <th onclick="sortTable(0)">課程代碼<i class="fa fa-sort-asc"></i></th>
+      <th onclick="sortTable(1)">通識向度<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(2)">課程名稱<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(3)">學分<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(4)">授課老師<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(5)">上課時間<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(6)">教室<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(7)">選課人數<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(8)">限制人數<i class="fa fa-sort"></i></th>
+      <th onclick="sortTable(9)">選課率<i class="fa fa-sort"></i></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ADG015301</td>
+      <td>C</td>
+      <td>造型藝術與創意美學</td>
+      <td>2</td>
+      <td>吳榮梅</td>
+      <td>W9 W10</td>
+      <td>None</td>
+      <td>97</td>
+      <td>80</td>
+      <td>1.212</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ADG016301</td>
+      <td>B</td>
+      <td>養老長照之規劃設計與管理營運</td>
+      <td>2</td>
+      <td>李威儀</td>
+      <td>T6 T7</td>
+      <td>None</td>
+      <td>73</td>
+      <td>100</td>
+      <td>0.730</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ADG018301</td>
+      <td>C</td>
+      <td>建築基礎攝影</td>
+      <td>2</td>
+      <td>楊仁江</td>
+      <td>M9 M10</td>
+      <td>None</td>
+      <td>87</td>
+      <td>30</td>
+      <td>2.900</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ADG020301</td>
+      <td>B</td>
+      <td>建築十二問－名家論壇(一)</td>
+      <td>2</td>
+      <td>鍾秉宏</td>
+      <td>TA TB TC</td>
+      <td>None</td>
+      <td>627</td>
+      <td>340</td>
+      <td>1.844</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>CEG321301</td>
+      <td>B</td>
+      <td>人文與科技實務講座</td>
+      <td>2</td>
+      <td>王百祿</td>
+      <td>WA WB WC</td>
+      <td>None</td>
+      <td>379</td>
+      <td>160</td>
+      <td>2.369</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>CHG303301</td>
+      <td>D</td>
+      <td>科技與人生</td>
+      <td>2</td>
+      <td>陳崇賢</td>
+      <td>F8 F9</td>
+      <td>None</td>
+      <td>140</td>
+      <td>51</td>
+      <td>2.745</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>ECG003301</td>
+      <td>B</td>
+      <td>台灣電資產業論壇與工程倫理</td>
+      <td>2</td>
+      <td>多位教師{吳堉文、許恆壽、謝進男}</td>
+      <td>RA RB RC</td>
+      <td>None</td>
+      <td>464</td>
+      <td>170</td>
+      <td>2.729</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>GE3401301</td>
+      <td>E</td>
+      <td>憲法</td>
+      <td>2</td>
+      <td>劉公昭</td>
+      <td>M8 M9</td>
+      <td>None</td>
+      <td>39</td>
+      <td>45</td>
+      <td>0.867</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>GE3401302</td>
+      <td>E</td>
+      <td>憲法</td>
+      <td>2</td>
+      <td>陳淵源</td>
+      <td>M6 M7</td>
+      <td>None</td>
+      <td>0</td>
+      <td>53</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>GE3402301</td>
+      <td>E</td>
+      <td>政黨政治與民主發展</td>
+      <td>2</td>
+      <td>劉公昭</td>
+      <td>M6 M7</td>
+      <td>None</td>
+      <td>84</td>
+      <td>48</td>
+      <td>1.750</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>GE3405301</td>
+      <td>D</td>
+      <td>社會科學概論</td>
+      <td>2</td>
+      <td>陳淵源</td>
+      <td>M8 M9</td>
+      <td>None</td>
+      <td>57</td>
+      <td>48</td>
+      <td>1.188</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>GE3405304</td>
+      <td>D</td>
+      <td>社會科學概論</td>
+      <td>2</td>
+      <td>陳志祥</td>
+      <td>R8 R9</td>
+      <td>None</td>
+      <td>13</td>
+      <td>53</td>
+      <td>0.245</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>GE3407301</td>
+      <td>E</td>
+      <td>國際現勢</td>
+      <td>2</td>
+      <td>鄭大誠</td>
+      <td>T8 T9</td>
+      <td>None</td>
+      <td>208</td>
+      <td>48</td>
+      <td>4.333</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>GE3604301</td>
+      <td>E</td>
+      <td>性別與法律</td>
+      <td>2</td>
+      <td>張宏誠</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>40</td>
+      <td>48</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>GE3605302</td>
+      <td>E</td>
+      <td>智慧財產權法概要</td>
+      <td>2</td>
+      <td>陳丁章</td>
+      <td>F1 F2</td>
+      <td>None</td>
+      <td>71</td>
+      <td>48</td>
+      <td>1.479</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>GE3606301</td>
+      <td>E</td>
+      <td>民法概要</td>
+      <td>2</td>
+      <td>李子聿</td>
+      <td>W8 W9</td>
+      <td>None</td>
+      <td>53</td>
+      <td>48</td>
+      <td>1.104</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>GE3612301</td>
+      <td>E</td>
+      <td>網際網路與法律</td>
+      <td>2</td>
+      <td>林瑞珠</td>
+      <td>R6 R7</td>
+      <td>None</td>
+      <td>57</td>
+      <td>85</td>
+      <td>0.671</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>GE3653301</td>
+      <td>A</td>
+      <td>音樂與身心靈管理</td>
+      <td>3</td>
+      <td>蘇金輝</td>
+      <td>R6 R7 R8</td>
+      <td>None</td>
+      <td>106</td>
+      <td>48</td>
+      <td>2.208</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>GE3653302</td>
+      <td>A</td>
+      <td>音樂與身心靈管理</td>
+      <td>3</td>
+      <td>蘇金輝</td>
+      <td>R2 R3 R4</td>
+      <td>None</td>
+      <td>124</td>
+      <td>48</td>
+      <td>2.583</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>GE3657301</td>
+      <td>G</td>
+      <td>公職入門公文</td>
+      <td>1</td>
+      <td>游適宏</td>
+      <td>M4</td>
+      <td>None</td>
+      <td>52</td>
+      <td>48</td>
+      <td>1.083</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>GE3660301</td>
+      <td>A</td>
+      <td>性別與生活</td>
+      <td>3</td>
+      <td>何珮瑩</td>
+      <td>R6 R7 R8</td>
+      <td>None</td>
+      <td>22</td>
+      <td>48</td>
+      <td>0.458</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>GE3700301</td>
+      <td>A</td>
+      <td>文學與人生</td>
+      <td>2</td>
+      <td>王淑芬</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>0</td>
+      <td>15</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>GE3700302</td>
+      <td>A</td>
+      <td>文學與人生</td>
+      <td>2</td>
+      <td>蔡明蓉</td>
+      <td>M3 M4</td>
+      <td>None</td>
+      <td>76</td>
+      <td>48</td>
+      <td>1.583</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>GE3708301</td>
+      <td>D</td>
+      <td>台灣社會變遷</td>
+      <td>2</td>
+      <td>陳淑銖</td>
+      <td>M8 M9</td>
+      <td>None</td>
+      <td>14</td>
+      <td>48</td>
+      <td>0.292</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>GE3708302</td>
+      <td>D</td>
+      <td>台灣社會變遷</td>
+      <td>2</td>
+      <td>陳淑銖</td>
+      <td>M6 M7</td>
+      <td>None</td>
+      <td>0</td>
+      <td>53</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>GE3709301</td>
+      <td>A</td>
+      <td>歷史與文明的變遷</td>
+      <td>2</td>
+      <td>何思瞇</td>
+      <td>M8 M9</td>
+      <td>None</td>
+      <td>11</td>
+      <td>45</td>
+      <td>0.244</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>GE3709302</td>
+      <td>A</td>
+      <td>歷史與文明的變遷</td>
+      <td>2</td>
+      <td>何思瞇</td>
+      <td>M6 M7</td>
+      <td>None</td>
+      <td>54</td>
+      <td>48</td>
+      <td>1.125</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>GE3710301</td>
+      <td>D</td>
+      <td>近代東亞視覺與文化史</td>
+      <td>2</td>
+      <td>張世瑛</td>
+      <td>R6 R7</td>
+      <td>None</td>
+      <td>15</td>
+      <td>43</td>
+      <td>0.349</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>GE3710302</td>
+      <td>D</td>
+      <td>近代東亞視覺與文化史</td>
+      <td>2</td>
+      <td>張世瑛</td>
+      <td>R8 R9</td>
+      <td>None</td>
+      <td>147</td>
+      <td>48</td>
+      <td>3.062</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>GE3711301</td>
+      <td>D</td>
+      <td>華人歷史與文化</td>
+      <td>2</td>
+      <td>張斐怡</td>
+      <td>R6 R7</td>
+      <td>None</td>
+      <td>2</td>
+      <td>43</td>
+      <td>0.047</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>GE3711302</td>
+      <td>D</td>
+      <td>華人歷史與文化</td>
+      <td>2</td>
+      <td>張斐怡</td>
+      <td>R8 R9</td>
+      <td>None</td>
+      <td>6</td>
+      <td>48</td>
+      <td>0.125</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>GE3713301</td>
+      <td>D</td>
+      <td>海洋考古與海洋文明</td>
+      <td>2</td>
+      <td>王俊昌</td>
+      <td>W1 W2</td>
+      <td>None</td>
+      <td>73</td>
+      <td>48</td>
+      <td>1.521</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>GE3713302</td>
+      <td>D</td>
+      <td>海洋考古與海洋文明</td>
+      <td>2</td>
+      <td>王俊昌</td>
+      <td>W3 W4</td>
+      <td>None</td>
+      <td>33</td>
+      <td>10</td>
+      <td>3.300</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>GE3714301</td>
+      <td>D</td>
+      <td>中國與東亞文明史</td>
+      <td>2</td>
+      <td>王瑞傑</td>
+      <td>F8 F9</td>
+      <td>None</td>
+      <td>6</td>
+      <td>43</td>
+      <td>0.140</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>GE3714302</td>
+      <td>D</td>
+      <td>中國與東亞文明史</td>
+      <td>2</td>
+      <td>王瑞傑</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>26</td>
+      <td>48</td>
+      <td>0.542</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>GE3719301</td>
+      <td>A</td>
+      <td>人類文明起源史</td>
+      <td>2</td>
+      <td>趙潤昌</td>
+      <td>T1 T2</td>
+      <td>None</td>
+      <td>26</td>
+      <td>52</td>
+      <td>0.500</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>GE3719302</td>
+      <td>A</td>
+      <td>人類文明起源史</td>
+      <td>2</td>
+      <td>趙潤昌</td>
+      <td>T6 T7</td>
+      <td>None</td>
+      <td>75</td>
+      <td>48</td>
+      <td>1.562</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>GE3723301</td>
+      <td>C</td>
+      <td>藝術創作與心靈探索</td>
+      <td>2</td>
+      <td>鄭淑文</td>
+      <td>W6 W7</td>
+      <td>None</td>
+      <td>0</td>
+      <td>53</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>GE3723302</td>
+      <td>C</td>
+      <td>藝術創作與心靈探索</td>
+      <td>2</td>
+      <td>鄭淑文</td>
+      <td>W8 W9</td>
+      <td>None</td>
+      <td>234</td>
+      <td>48</td>
+      <td>4.875</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>GE3724301</td>
+      <td>D</td>
+      <td>近代中國史與文創運用</td>
+      <td>2</td>
+      <td>吳淑鳳</td>
+      <td>R6 R7</td>
+      <td>None</td>
+      <td>12</td>
+      <td>48</td>
+      <td>0.250</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>GE3724302</td>
+      <td>D</td>
+      <td>近代中國史與文創運用</td>
+      <td>2</td>
+      <td>吳淑鳳</td>
+      <td>R8 R9</td>
+      <td>None</td>
+      <td>5</td>
+      <td>48</td>
+      <td>0.104</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>GE3725301</td>
+      <td>E</td>
+      <td>消費者保護法</td>
+      <td>2</td>
+      <td>林瑞珠</td>
+      <td>R3 R4</td>
+      <td>None</td>
+      <td>61</td>
+      <td>85</td>
+      <td>0.718</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>GE3726301</td>
+      <td>E</td>
+      <td>人際關係</td>
+      <td>2</td>
+      <td>林慧慈(待)</td>
+      <td>W1 W2</td>
+      <td>None</td>
+      <td>3</td>
+      <td>53</td>
+      <td>0.057</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>GE3726302</td>
+      <td>E</td>
+      <td>人際關係</td>
+      <td>2</td>
+      <td>林慧慈(待)</td>
+      <td>W3 W4</td>
+      <td>None</td>
+      <td>173</td>
+      <td>48</td>
+      <td>3.604</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>GE3727301</td>
+      <td>D</td>
+      <td>臺灣庶民生活史</td>
+      <td>2</td>
+      <td>陳世榮</td>
+      <td>W6 W7</td>
+      <td>None</td>
+      <td>64</td>
+      <td>48</td>
+      <td>1.333</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>GE3727302</td>
+      <td>D</td>
+      <td>臺灣庶民生活史</td>
+      <td>2</td>
+      <td>陳世榮</td>
+      <td>W8 W9</td>
+      <td>None</td>
+      <td>21</td>
+      <td>28</td>
+      <td>0.750</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>GE3729301</td>
+      <td>C</td>
+      <td>數位藝術設計</td>
+      <td>2</td>
+      <td>張博智</td>
+      <td>R6 R7</td>
+      <td>None</td>
+      <td>59</td>
+      <td>48</td>
+      <td>1.229</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>GE3729302</td>
+      <td>C</td>
+      <td>數位藝術設計</td>
+      <td>2</td>
+      <td>張博智</td>
+      <td>R8 R9</td>
+      <td>None</td>
+      <td>99</td>
+      <td>53</td>
+      <td>1.868</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>GE3900301</td>
+      <td>C</td>
+      <td>藝術賞析</td>
+      <td>2</td>
+      <td>盧廷清</td>
+      <td>R1 R2</td>
+      <td>None</td>
+      <td>42</td>
+      <td>48</td>
+      <td>0.875</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>GE3900304</td>
+      <td>C</td>
+      <td>藝術賞析</td>
+      <td>2</td>
+      <td>鄭治桂</td>
+      <td>R3 R4</td>
+      <td>None</td>
+      <td>163</td>
+      <td>48</td>
+      <td>3.396</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>GE3901301</td>
+      <td>A</td>
+      <td>哲學與人生</td>
+      <td>2</td>
+      <td>林景銘</td>
+      <td>T6 T7</td>
+      <td>None</td>
+      <td>8</td>
+      <td>53</td>
+      <td>0.151</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>GE3902301</td>
+      <td>D</td>
+      <td>台灣民俗與文化</td>
+      <td>2</td>
+      <td>楊智琄</td>
+      <td>W8 W9</td>
+      <td>None</td>
+      <td>30</td>
+      <td>41</td>
+      <td>0.732</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>GE3903302</td>
+      <td>A</td>
+      <td>邏輯思考概論</td>
+      <td>2</td>
+      <td>林景銘</td>
+      <td>T8 T9</td>
+      <td>None</td>
+      <td>152</td>
+      <td>53</td>
+      <td>2.868</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>GE3907301</td>
+      <td>E</td>
+      <td>管理概論</td>
+      <td>2</td>
+      <td>賴明政</td>
+      <td>R1 R2</td>
+      <td>None</td>
+      <td>30</td>
+      <td>47</td>
+      <td>0.638</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>GE3907302</td>
+      <td>E</td>
+      <td>管理概論</td>
+      <td>2</td>
+      <td>賴明政</td>
+      <td>R3 R4</td>
+      <td>None</td>
+      <td>0</td>
+      <td>53</td>
+      <td>0.000</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>GE3909302</td>
+      <td>F</td>
+      <td>醫學與生活</td>
+      <td>2</td>
+      <td>黃東明</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>3</td>
+      <td>15</td>
+      <td>0.200</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>GE3909303</td>
+      <td>F</td>
+      <td>醫學與生活</td>
+      <td>2</td>
+      <td>趙國芳</td>
+      <td>F1 F2</td>
+      <td>None</td>
+      <td>223</td>
+      <td>48</td>
+      <td>4.646</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>GE3909305</td>
+      <td>F</td>
+      <td>醫學與生活</td>
+      <td>2</td>
+      <td>黃東明</td>
+      <td>F8 F9</td>
+      <td>None</td>
+      <td>94</td>
+      <td>48</td>
+      <td>1.958</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>GE3909306</td>
+      <td>F</td>
+      <td>醫學與生活</td>
+      <td>2</td>
+      <td>趙國芳</td>
+      <td>F3 F4</td>
+      <td>None</td>
+      <td>5</td>
+      <td>43</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>GE3910301</td>
+      <td>F</td>
+      <td>食品與健康</td>
+      <td>2</td>
+      <td>翁銜穗</td>
+      <td>R1 R2</td>
+      <td>None</td>
+      <td>75</td>
+      <td>47</td>
+      <td>1.596</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>GE3910303</td>
+      <td>F</td>
+      <td>食品與健康</td>
+      <td>2</td>
+      <td>翁銜穗</td>
+      <td>R3 R4</td>
+      <td>None</td>
+      <td>147</td>
+      <td>48</td>
+      <td>3.062</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>GE3916301</td>
+      <td>D</td>
+      <td>德語區的思想與文化</td>
+      <td>2</td>
+      <td>何珮瑩</td>
+      <td>T3 T4</td>
+      <td>None</td>
+      <td>81</td>
+      <td>48</td>
+      <td>1.688</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>GE3917301</td>
+      <td>F</td>
+      <td>藥物與健康</td>
+      <td>2</td>
+      <td>王鵬豪</td>
+      <td>W6 W7</td>
+      <td>None</td>
+      <td>221</td>
+      <td>48</td>
+      <td>4.604</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>GE3917302</td>
+      <td>F</td>
+      <td>藥物與健康</td>
+      <td>2</td>
+      <td>王鵬豪</td>
+      <td>W8 W9</td>
+      <td>None</td>
+      <td>21</td>
+      <td>28</td>
+      <td>0.750</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>GE3918301</td>
+      <td>C</td>
+      <td>正向思考與心理健康</td>
+      <td>2</td>
+      <td>江彥陵</td>
+      <td>TA TB</td>
+      <td>None</td>
+      <td>257</td>
+      <td>48</td>
+      <td>5.354</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>GE3931301</td>
+      <td>D</td>
+      <td>普通心理學</td>
+      <td>3</td>
+      <td>黃金蘭</td>
+      <td>R6 R7 R8</td>
+      <td>None</td>
+      <td>116</td>
+      <td>48</td>
+      <td>2.417</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>GE3931302</td>
+      <td>D</td>
+      <td>普通心理學</td>
+      <td>3</td>
+      <td>黃金蘭</td>
+      <td>F6 F7 F8</td>
+      <td>None</td>
+      <td>38</td>
+      <td>48</td>
+      <td>0.792</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>HCG007301</td>
+      <td>F</td>
+      <td>天文漫談</td>
+      <td>2</td>
+      <td>王致悅</td>
+      <td>TA TB</td>
+      <td>None</td>
+      <td>14</td>
+      <td>100</td>
+      <td>0.140</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>HCG009301</td>
+      <td>F</td>
+      <td>運動傷害評估與治療學</td>
+      <td>2</td>
+      <td>許維君</td>
+      <td>T6 T7</td>
+      <td>None</td>
+      <td>301</td>
+      <td>96</td>
+      <td>3.135</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>MBG204301</td>
+      <td>E</td>
+      <td>溝通與表達</td>
+      <td>2</td>
+      <td>胡家紋</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>171</td>
+      <td>51</td>
+      <td>3.353</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>MBG204302</td>
+      <td>E</td>
+      <td>溝通與表達</td>
+      <td>2</td>
+      <td>胡家紋</td>
+      <td>F8 F9</td>
+      <td>None</td>
+      <td>170</td>
+      <td>51</td>
+      <td>3.333</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>MEG302301</td>
+      <td>F</td>
+      <td>3D列印原理與應用實務</td>
+      <td>3</td>
+      <td>多位教師{林宗翰、鄭正元、鄭逸琳}</td>
+      <td>W8</td>
+      <td>None</td>
+      <td>128</td>
+      <td>50</td>
+      <td>2.560</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>TCG033301</td>
+      <td>C</td>
+      <td>文藝發展與流行音樂文化</td>
+      <td>2</td>
+      <td>馬世芳</td>
+      <td>MA MB MC</td>
+      <td>None</td>
+      <td>201</td>
+      <td>140</td>
+      <td>1.436</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>TCG034301</td>
+      <td>C</td>
+      <td>文學與電影</td>
+      <td>2</td>
+      <td>許榮哲</td>
+      <td>RA RB RC</td>
+      <td>None</td>
+      <td>148</td>
+      <td>170</td>
+      <td>0.871</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>TCG035301</td>
+      <td>C</td>
+      <td>心靈提升實作</td>
+      <td>2</td>
+      <td>果鏡法師</td>
+      <td>S3 S4</td>
+      <td>None</td>
+      <td>55</td>
+      <td>46</td>
+      <td>1.196</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>TCG036301</td>
+      <td>C</td>
+      <td>臨終關懷與生命教育</td>
+      <td>2</td>
+      <td>多位教師{宗惇法師、德嘉法師}</td>
+      <td>W6 W7</td>
+      <td>None</td>
+      <td>34</td>
+      <td>50</td>
+      <td>0.680</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>TCG037301</td>
+      <td>C</td>
+      <td>親近經典智慧</td>
+      <td>2</td>
+      <td>釋見咸法師</td>
+      <td>W3 W4</td>
+      <td>None</td>
+      <td>74</td>
+      <td>51</td>
+      <td>1.451</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>TCG039301</td>
+      <td>A</td>
+      <td>環境關懷與生態寫作</td>
+      <td>2</td>
+      <td>蔡昱宇</td>
+      <td>R3 R4</td>
+      <td>None</td>
+      <td>89</td>
+      <td>50</td>
+      <td>1.780</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>TCG040301</td>
+      <td>C</td>
+      <td>人我關懷與心靈成長</td>
+      <td>2</td>
+      <td>洪正和</td>
+      <td>T3 T4</td>
+      <td>None</td>
+      <td>67</td>
+      <td>50</td>
+      <td>1.340</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>TCG041301</td>
+      <td>C</td>
+      <td>藝術美學與生活關懷</td>
+      <td>2</td>
+      <td>楊佳蓉</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>29</td>
+      <td>50</td>
+      <td>0.580</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>TCG042302</td>
+      <td>G</td>
+      <td>服務學習(一)</td>
+      <td>1</td>
+      <td>未 定</td>
+      <td>M1</td>
+      <td>None</td>
+      <td>7</td>
+      <td>50</td>
+      <td>0.140</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>TCG043301</td>
+      <td>G</td>
+      <td>服務學習(二)</td>
+      <td>1</td>
+      <td>未 定</td>
+      <td>W5</td>
+      <td>None</td>
+      <td>15</td>
+      <td>55</td>
+      <td>0.273</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>TCG044301</td>
+      <td>F</td>
+      <td>綠色科技與環境</td>
+      <td>2</td>
+      <td>蘇威年</td>
+      <td>R6 R7</td>
+      <td>None</td>
+      <td>1000</td>
+      <td>51</td>
+      <td>3.725</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>TCG045301</td>
+      <td>G</td>
+      <td>部落漫遊</td>
+      <td>1</td>
+      <td>蔡曉雲</td>
+      <td>W9 W10</td>
+      <td>None</td>
+      <td>77</td>
+      <td>110</td>
+      <td>0.700</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>TCG046301</td>
+      <td>E</td>
+      <td>性別與社會福利</td>
+      <td>2</td>
+      <td>郭育吟</td>
+      <td>W3 W4</td>
+      <td>None</td>
+      <td>42</td>
+      <td>80</td>
+      <td>0.525</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>TCG047301</td>
+      <td>F</td>
+      <td>養生醫學</td>
+      <td>1</td>
+      <td>李兆麟</td>
+      <td>W5</td>
+      <td>None</td>
+      <td>934</td>
+      <td>110</td>
+      <td>8.491</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>TCG047302</td>
+      <td>F</td>
+      <td>養生醫學</td>
+      <td>1</td>
+      <td>陳重光</td>
+      <td>W7</td>
+      <td>None</td>
+      <td>20</td>
+      <td>51</td>
+      <td>0.392</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>TCG048301</td>
+      <td>G</td>
+      <td>雜誌編輯與學習</td>
+      <td>2</td>
+      <td>梁欣如</td>
+      <td>W9 W10</td>
+      <td>None</td>
+      <td>46</td>
+      <td>50</td>
+      <td>0.920</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>TCG058301</td>
+      <td>B</td>
+      <td>工業4.0導論</td>
+      <td>2</td>
+      <td>宋德震</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>234</td>
+      <td>46</td>
+      <td>5.087</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>TCG059301</td>
+      <td>C</td>
+      <td>活力合唱（一）</td>
+      <td>2</td>
+      <td>王維君</td>
+      <td>M6 M7 M8</td>
+      <td>None</td>
+      <td>33</td>
+      <td>55</td>
+      <td>0.600</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>TCG063301</td>
+      <td>D</td>
+      <td>口語表達</td>
+      <td>2</td>
+      <td>傅汝洋</td>
+      <td>T8 T9</td>
+      <td>None</td>
+      <td>97</td>
+      <td>46</td>
+      <td>2.109</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>TCG063302</td>
+      <td>D</td>
+      <td>口語表達</td>
+      <td>2</td>
+      <td>王淑俐</td>
+      <td>T6 T7</td>
+      <td>None</td>
+      <td>41</td>
+      <td>51</td>
+      <td>0.804</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>TCG065301</td>
+      <td>B</td>
+      <td>經濟學：市場與趨勢</td>
+      <td>2</td>
+      <td>徐茂炫</td>
+      <td>F6 F7</td>
+      <td>None</td>
+      <td>32</td>
+      <td>51</td>
+      <td>0.627</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>TCG068301</td>
+      <td>E</td>
+      <td>領導與生活</td>
+      <td>2</td>
+      <td>洪正和</td>
+      <td>M6 M7</td>
+      <td>None</td>
+      <td>59</td>
+      <td>51</td>
+      <td>1.157</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>TCG069301</td>
+      <td>A</td>
+      <td>古典小說探趣</td>
+      <td>2</td>
+      <td>蔡昱宇</td>
+      <td>T3 T4</td>
+      <td>None</td>
+      <td>113</td>
+      <td>51</td>
+      <td>2.216</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>TCG072301</td>
+      <td>C</td>
+      <td>生死議題與臨終關懷</td>
+      <td>2</td>
+      <td>吳淑貞</td>
+      <td>M6 M7</td>
+      <td>None</td>
+      <td>96</td>
+      <td>51</td>
+      <td>1.882</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>TCG073301</td>
+      <td>B</td>
+      <td>群眾生活中的科技議題</td>
+      <td>2</td>
+      <td>紀寰緯(待)</td>
+      <td>W6 W7</td>
+      <td>None</td>
+      <td>55</td>
+      <td>51</td>
+      <td>1.078</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>TCG074301</td>
+      <td>B</td>
+      <td>電信政策</td>
+      <td>2</td>
+      <td>溫俊瑜</td>
+      <td>RA RB</td>
+      <td>None</td>
+      <td>26</td>
+      <td>51</td>
+      <td>0.510</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>TCG075301</td>
+      <td>E</td>
+      <td>媒體與社會</td>
+      <td>2</td>
+      <td>Aaron</td>
+      <td>W6 W7</td>
+      <td>None</td>
+      <td>88</td>
+      <td>51</td>
+      <td>1.725</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<hr />
+<footer id="footer">
+<ul class="icons">
+<li><a href="index.html" class="fa-home"></a></li>
+</ul>
+</footer>
+</section>
+<footer id="footer">
+<ul class="copyright">
+<li>&copy; 408 Room</li>
+</ul>
+</footer>
+</div>
+		<!-- Button Gotop -->
+			<div id="gotop">
+				<ul class="icons">
+					<li><a class="fa fa-arrow-up"></i></a></li>
+				</ul>
+			</div>
+<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+</body>
+</html>
