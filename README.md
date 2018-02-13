@@ -6,18 +6,18 @@
 *	Donate Us
 *	Contact Us
 
-#	Get Grade
+###	Get Grade
 *	存放選課資料的地方也是這個網頁的核心所在
 *	包含 選課代碼, 通識向度, 選課名稱, 學分, 授課老師, 上課時間, 教室, 選課人數, 限制人數, **選課率**
 *	用 **JavaScript** 和 **jQuery** 實作了 **排序**和**搜尋**的演算法
 
-#	About Us
+###	About Us
 *	單純就是充版面用的, 拿來放開發者和伺服器提供者的基本資訊
 
-#	Donate Us
+###	Donate Us
 *	贊助我們 **87** 塊錢!	
 
-#	Contact Us
+###	Contact Us
 *	聯絡我們, 背後是用 **Google SpreadSheet** 當作簡易的資料庫, 資料包在 **form** 用 **post** 的方法送出
 
 ##  運作
